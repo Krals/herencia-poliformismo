@@ -1,0 +1,15 @@
+ private void objetoTextoActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+    }                                           
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        
+        Cuadrado d=new Cuadrado();
+                 d.setLado(Integer.parseInt(objetoTexto.getText()));
+                 
+        // El siguiente objeto wes el area
+                 
+                 Area a=new Area(d);
+                objetoResultado.setText(""+ a.calcular());
+                
